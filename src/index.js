@@ -1,10 +1,10 @@
-generateTitle=()=> {
-    return 'Judul Default'
-}
+//rest dan spread menguraikan semua isi array berapapun isinya
 
-createTag = (judul=generateTitle(),tag='bebas') =>{
-    // tag = tag || 'tag'
-    console.log('Forum '+judul+' Punya tag #'+tag)
+signIn = (...member)=>{
+    console.log(member)
 }
-
-createTag()
+// let data = ['fitra','123','24']
+username = 'fitra'
+password = '123'
+umur = 30
+signIn(username,password,umur);

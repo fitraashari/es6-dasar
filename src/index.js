@@ -1,10 +1,17 @@
-//rest dan spread menguraikan semua isi array berapapun isinya
+let username = 'fitra'
+let umur = 20
+// let text = `Member ${username} umurnya ${umur}`
+// let div = `
+// <h1>${username}</h1>
+// <h1>anjay</h1>
+// `;
 
-signIn = (...member)=>{
-    console.log(member)
+
+
+test = (strings, username,umur)=>{
+    let string1 = strings[0]
+    let string2 = strings[1]
+    console.log(umur);
 }
-// let data = ['fitra','123','24']
-username = 'fitra'
-password = '123'
-umur = 30
-signIn(username,password,umur);
+let output = test`nama saya adalah ${username} umurnya ${umur}`
+// console.log(output);

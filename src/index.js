@@ -1,27 +1,23 @@
-//var function scope
-//var let dan const block scope
-// let nama = "Fitra";
-// {
-// let nama = "Ashari";
-// console.log(nama);
-// }
-// function getName(){
-//     let nama="Fitra";
-//     if (false) {
-//         console.log(nama);
-//     }else{
-//         console.log(nama);
-//     }
-// }
-// getName();
+// //syntax arrow => function shorthand
 
-//const tidak bisa reasign
-const person = {
-    id : 1,
-    nama : "fitra"
-};
-person={
-    id:2,
-    nama:"ashari"
+// let members = ['fitra','ashari','arashi'];
+// // hanya 1 parameter 
+// // members.forEach(member=>console.log(member));
+
+// //jika menggunakan  parameter harus menggunakan kurung
+
+// //tidak perlu kurung kurawal jika tanpa return
+// let membersindex = members.map((member,index)=>
+//     member+' == '+index);
+// console.log(membersindex);
+
+let data={
+    members: ["fitra","ashari"],
+    getMembers(){
+        //ketika menggunakan syntax arrow this jadi objek itu sendiri, jika menggunakan function this = window
+        this.members.map((name)=>{
+            console.log(this);
+        })
+    }
 }
-console.log(person);
+data.getMembers();

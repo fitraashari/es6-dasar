@@ -1,17 +1,19 @@
-// class
-class members{
-     constructor(name,umur){
-         //jika ingin mengakses variable didalam class gumakan this
-         this.name = name
-         this.umur = umur
-     }
-    getData(name,umur){
-        return `nama ${this.name} umur ${this.umur}`
-    }
+// let getMember = new Promise((resolve,reject)=>{ //langsung asign
+//     if (true){
+//         resolve('berhasil')
+//     }
+//     reject('gagal')
+// })
+// console.log(getMember.then((msg)=>{
+//     console.log("ini dalam then2 "+msg) //jika resolve
+// },(msg)=>{//catch chain
+//     console.log("ini dalam catch2 "+msg) //jika reject
+// }));
 
-    static getPoint(){//static function bsia di panggil tanpa di instgansiasi
-        return `Pointnnya 100`
-    }
+//di dalam function
+let getMember=()=>{
+    return new Promise((resolve,reject)=>{
+
+    })
 }
-let member = new members('fitra',20)
-console.log(members.getPoint());
+console.log(getMember());
